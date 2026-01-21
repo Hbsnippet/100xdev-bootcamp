@@ -12,7 +12,13 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar Fix */
+.main-container {
+    max-width: 1440px; 
+    margin: 0 auto;    
+    width: 100%;
+}
+
+
 .navbar {
     display: flex;
     justify-content: space-between; 
@@ -171,7 +177,7 @@ body {
 }
 
 
-.grid {
+ .grid {
     display: grid;
     grid-column: span 2;
     grid-template-rows: auto 1fr;
@@ -202,6 +208,8 @@ body {
     gap: 20px;
     width: 100%;
     margin-top: 20px;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .left-sidegrid {
@@ -230,6 +238,7 @@ body {
     display: flex;
     gap: 10px;
     flex-direction: flex-start;
+    flex-wrap: wrap;
 }
 
 .little-section p {
@@ -257,21 +266,100 @@ body {
     flex: 1;
     background-color: #01275d;
     max-width: 472px;
-    max-height: 248px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-radius:10px 42px ;
+    padding: 20px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
 .right-sidegrid h1 {
     color: white ;
     font: 36px;
-    padding: 29px 0px 0px 35px ;
 }
 
 .right-sidegrid p {
     font: 16px;
     color: #ffffff;
-    padding: 8px 0px 0px 35px ;
 
+} 
+
+
+/* responsive thingy below */
+ 
+
+@media (max-width: 1350px) {
+    .navbar, .hero-section, .grid {
+        padding-left: 60px; 
+        padding-right: 60px;
+    }
+
+    .left-hero h1 {
+        font-size: 50px; 
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .left-hero {
+        align-items: center;
+    }
+
+    .hero-right {
+        justify-content: center;
+    }
+
+    .upper-section {
+        flex-direction: column; 
+        gap: 30px;
+        border-radius: 20px;
+    }
+
+    .border {
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .lower-section {
+        flex-direction: column; 
+    }
+
+    .left-sidegrid, .right-sidegrid {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .grid, .hero-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left-hero h1 {
+        font-size: 36px;
+    }
+
+    .left {
+        gap: 15px; 
+    }
+
+    .search {
+        display: none; 
+    }
 }
