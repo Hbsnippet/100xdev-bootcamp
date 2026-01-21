@@ -165,10 +165,113 @@ body {
 }
 
 .hero-img {
-    width: 100%;
-    border-radius: 30px;
+    max-width: 550px;
     position: relative;
     z-index: 2;
 }
 
 
+.grid {
+    display: grid;
+    grid-column: span 2;
+    grid-template-rows: auto 1fr;
+    padding: 0px 130px;
+}
+
+.upper-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #01275d;
+    color: white;
+    padding: 50px;
+    border-radius: 20px 200px 20px 20px;
+}
+
+.h1 {
+    padding: 4px 0px;
+}
+
+.border {
+    padding: 0px 34px;
+    border-left: 1px solid white;
+}
+
+.lower-section {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.left-sidegrid {
+    flex: 2;
+    background-color:#05ba7d;
+    justify-content: flex-start;
+    max-width: 700px;
+    flex-direction: column;
+    padding: 29px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px 42px ;
+}
+
+.left-sidegrid h1 {
+    padding: 10px 0px 17px 0px;
+    font: 36px;
+    color: white;
+}
+
+.left-sidegrid p {
+    padding: 0px 0px 19px 0px;
+    color: white;
+}
+
+.little-section {
+    display: flex;
+    gap: 10px;
+    flex-direction: flex-start;
+}
+
+.little-section p {
+    background-color: white;
+    color: #12d393;
+    padding: 10px 15px;
+    border-radius: 25px 25px;
+}
+
+.lil-nugget {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.lil-nugget p {
+    background-color: white;
+    color: #12d393;
+    padding: 10px 15px;
+    border-radius: 25px 25px;
+}
+
+
+.right-sidegrid {
+    flex: 1;
+    background-color: #01275d;
+    max-width: 472px;
+    max-height: 248px;
+    margin-bottom: 25px;
+    border-radius:10px 42px ;
+}
+
+
+.right-sidegrid h1 {
+    color: white ;
+    font: 36px;
+    padding: 29px 0px 0px 35px ;
+}
+
+.right-sidegrid p {
+    font: 16px;
+    color: #ffffff;
+    padding: 8px 0px 0px 35px ;
+
+}
