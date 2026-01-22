@@ -2,18 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PokeMon</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <div class="input-number">
-            <input type="number" placeholder="Numbers of card">
-        </div>
-
-        <div class="pokemon-types">
-            <label for="types">Select the type</label
-        </div>
+    <div class="controls">
+        <input type="number" id="cardCount" placeholder="Kitne Pokemon?">
+        
+        <select id="category">
+            <option value="" disabled selected>Select Type</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+            <option value="electric">Electric</option>
+        </select>
+        
+        <button id="getBtn">Search</button>
     </div>
+
+    <div id="pokemon-container"></div>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
