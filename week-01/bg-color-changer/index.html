@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            max-width: 60%;
+            margin: 0 auto;
+            background-color: #CDEAC0 ;
+
+        }
+
+
+
+        .btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 1rem;
+            border: 1px solid #646363;
+            border-radius: 3rem;
+            background-color: aliceblue;
+            width: 100%;
+            justify-content:center;
+            margin-bottom: 2rem;
+        }
+
+        .buttn {
+            padding: 2px 4px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 ;
+        }
+
+        .custom-color{
+            display: flex;
+            gap: 0.2rem;
+            border-style: none;
+            padding: 0.1rem;
+            border-radius: 10px;
+        }
+
+        #yessirr {
+            border-radius: 6px;
+        }
+
+        #picker {
+            border-radius: 6px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <button class="buttn" type="submit" value="red">Red</button>
+        <button class="buttn" type="submit" value="lavender">lavender</button>
+        <button class="buttn" type="submit" value="blue">Blue</button>
+        <button class="buttn" type="submit" value="#E9EDC9">summer</button>
+        <button class="buttn" type="submit" value="pink">Pink</button>
+        <button class="buttn" type="submit" value="#EDE7B1">Yellow</button>
+        <button class="buttn" type="submit" value="#CDEAC0">Default</button>
+        <div class="custom-color">
+        <input type="color" id="picker">
+        <button id="yessirr" type="button">YESSIRR</button>
+    </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
