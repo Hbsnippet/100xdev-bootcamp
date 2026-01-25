@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Taskify</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     
+    <div class="Taskify-container">
+    <div class="add-task-container" draggable="true">
+    <input type="text" id="task-title" placeholder="Task Title...">
+    <textarea id="task-desc" placeholder="Description..."></textarea>
+    <select id="task-status">
+        <option value="ToDo">To Do</option>
+        <option value="InProgress">In Progress</option>
+        <option value="UnderReview">Under Review</option>
+        <option value="Finished">Finished</option>
+    </select>
+    <select id="task-prior">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="urgent">Urgent</option>
+    </select>
+    <button id="add-task-btn">Add Task</button>
+        </div>
+    <div class="column" id="todo-column">
+        <h3 class="column-header">To Do</h3>
+        <div class="task-list">
+            </div>
+    </div>
+
+    <div class="column" id="inprogress-column">
+        <h3 class="column-header">In Progress</h3>
+        <div class="task-list"></div>
+    </div>
+
+    <div class="column" id="review-column">
+        <h3 class="column-header">Under Review</h3>
+        <div class="task-list"></div>
+    </div>
+
+    <div class="column" id="finished-column">
+        <h3 class="column-header">Finished</h3>
+        <div class="task-list"></div>
+    </div>
+
+</div>
+
+
+<script type="module" src="script.js"></script>
 </body>
 </html>
