@@ -85,6 +85,8 @@ document.addEventListener('dragstart', (ev) => {
     }
 });
 
+
+
 document.addEventListener('dragend', (ev) => {
     const card = ev.target.closest('.task-card');
     if (card) card.classList.remove('dragging');
@@ -118,5 +120,6 @@ columns.forEach(col => {
         if (task && newStatus) {
             task.status = newStatus;
             renderTask(); 
+        }
     });
 });
