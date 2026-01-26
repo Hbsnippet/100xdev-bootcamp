@@ -11,3 +11,17 @@
 // ```
 // hello world my name is raman
 // ```
+
+
+const fs = require('fs')
+
+fs.readFile('./100xdev-bootcamp/week-2/01-async-js/medium/myfile.txt', 'utf8', (err, data) => {
+    if(data){
+       const bund = data.split('  ').join(' ')
+       console.log(bund);
+    }
+    if(err){
+        console.log("error reading the file:", err);
+        return;
+    }
+})

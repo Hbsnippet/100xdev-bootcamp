@@ -6,3 +6,18 @@
 //  - HH:MM::SS (Eg. 13:45:23)
 
 //  - HH:MM::SS AM/PM (Eg 01:45:23 PM)
+
+// function updateClock() {
+//     let now = new Date();
+
+//     let h = String(now.getHours()).padStart(2, '0');
+//     let m = String(now.getMinutes()).padStart(2, '0');
+//     let s = String(now.getSeconds()).padStart(2, '0')
+
+//     console.log(`${h}:${m}:${s}`);
+
+//     setTimeout(updateClock, 1000)
+// }
+
+// updateClock()
+
