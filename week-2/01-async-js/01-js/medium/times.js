@@ -7,6 +7,16 @@ Try running it for
 Hint - use Date class exposed in JS
 */
 
+
 function calculateTime(n) {
-    return 0.01;
+    const now = Date.now();
+    let count = 0;
+    for(let i = 1; i <=n; i++){
+        count++
+    } 
+    const end = Date.now();
+    return (end- now)/1000;
 }
+
+console.log(`Test for 1st case : ${calculateTime(100)}`);
+console.log(`Test for 1st case : ${calculateTime(1000000000)}`);

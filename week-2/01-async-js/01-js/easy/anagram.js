@@ -18,7 +18,9 @@ function isAnagram(str1, str2) {
   }
 
 
-  return sortString(str1) === sortString(str2);
+  if(sortString(str1) === sortString(str2)){
+    return true;
+  } else {return false}
 }
 
 module.exports = isAnagram;
