@@ -22,5 +22,23 @@
 */
 function nonrepeat(str) {
   // Your code here
+  if(str.length === 0){
+    return null
+  }
+
+  let charCount = {};
+
+  for(let char of str){
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
+
+  for(let char of str){
+    if(charCount[char] === 1){
+      return char;
+    }
+  }
+
+  return null
+  
 }
 module.exports = nonrepeat;

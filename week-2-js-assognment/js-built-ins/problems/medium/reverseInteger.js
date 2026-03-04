@@ -21,8 +21,24 @@
   - `npm run test-reverseInteger`
 */
 
-function reverseInteger(num) {
-  // Your code here
-}
+// function reverseInteger(num) {
+//   // Your code here
+
+//   const isNegative = num < 0;
+
+//   const reverseStr = Math.abs(num).toString().split('').reverse().join('');
+
+//   let reversedNum = parseInt(reverseStr);
+
+//   if(isNegative){
+//     return -reversedNum
+//   } else 
+//     {
+//       return reversedNum
+
+//     }
+
+
+// }
 
 module.exports = reverseInteger;
