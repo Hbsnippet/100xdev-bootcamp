@@ -7,12 +7,12 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "npx jest tests/server.test.js"
+    "test": "npx jest tests/server.test.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "devDependencies": {
     "jest": "^30.2.0"
   }
