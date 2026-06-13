@@ -34,7 +34,8 @@ export async function createTravelPlan(
   endDate: string,
   budget: number
 ) {
-
+  const result = await client.query(`INSERT INTO travel_plans (user_id, title, destination_city, destination_country, start_date, end_date, budget) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *`, [userId, title, destinationCity, destinationCountry, startDate, endDate, budget]);
+  return result.rows[0];
 }
 
 /*
@@ -46,7 +47,8 @@ export async function updateTravelPlan(
   title?: string,
   budget?: number
 ) {
-
+  const result = await client.query(`UPDATE travel_plans SET title = COALESCE($2, title), budget = COALESCE($3, budget) where id = $1 RETURNING *`, [planId, title, budget]);
+  return result.rows[0]
 }
 
 /*
@@ -63,5 +65,6 @@ export async function updateTravelPlan(
  * }]
  */
 export async function getTravelPlans(userId: number) {
-
+  const result = await client.query(`SELECT * FROM travel_plans where user_id = $1`, [userId]);
+  return result.rows
 }

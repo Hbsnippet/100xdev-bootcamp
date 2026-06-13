@@ -33,4 +33,3 @@ export async function dropTables() {
     `);
 }
 
-module.exports = { createTables, dropTables };

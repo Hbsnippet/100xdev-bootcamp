@@ -27,4 +27,4 @@ export async function dropTables() {
     await client.query(`DROP TABLE IF EXISTS users;`);
 }
 
-module.exports = { createTables, dropTables };
+

@@ -12,3 +12,21 @@
 // Example Output:
 // "You have selected a window seat."
 
+export enum SeatPosition {
+    Window, 
+    Middle,
+    Aisle
+}
+
+export function getSeatDescription (x: SeatPosition): string{
+    switch(x){
+        case SeatPosition.Window:
+            return 'you got window puh'
+        case SeatPosition.Middle:
+            return 'you got middle puh'
+        case SeatPosition.Aisle:
+            return "you got side puh"
+        default:
+            throw new Error("Invalid seat position");
+    };   
+}

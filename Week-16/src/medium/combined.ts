@@ -24,5 +24,22 @@
 //     downloadLink: 'https://example.com/ebook'
 // }
 
+type product = {
+    name: string;
+    price: number;
+}
 
+type DigitalProduct = {
+    downloadLink: string;
+}
+
+type FullProduct = product & DigitalProduct;
+
+export const fullProduct : FullProduct = {
+    name: "E-book",
+    price: 10,
+    downloadLink: "https://example.com/ebook"
+}
+
+console.log(fullProduct);
 
